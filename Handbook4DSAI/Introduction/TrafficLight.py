@@ -3,8 +3,8 @@
 
 import time
 
-GREEN = 17
-RED = 20
+GREEN = 12
+RED = 15
 YELLOW = 3
 
 ZFILL_WIDTH = max(len(str(GREEN)), len(str(RED)), len(str(YELLOW)))
@@ -23,9 +23,9 @@ def traffic_light():
         if count < GREEN:
             flush_print("\033[32m● %s" % str(GREEN - count).zfill(ZFILL_WIDTH))
         elif count < GREEN + YELLOW:
-            flush_print("\033[33m● %2s" % str(GREEN + YELLOW - count).zfill(ZFILL_WIDTH))
+            flush_print("\033[33m● %s" % str(GREEN + YELLOW - count).zfill(ZFILL_WIDTH))
         elif count < GREEN + YELLOW + RED:
-            flush_print("\033[31m● %2s" % str(GREEN + YELLOW + RED - count).zfill(ZFILL_WIDTH))
+            flush_print("\033[31m● %s" % str(GREEN + YELLOW + RED - count).zfill(ZFILL_WIDTH))
         count += 1
         time.sleep(1)
 
