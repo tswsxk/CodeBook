@@ -3,7 +3,7 @@
 
 import time
 
-GREEN = 3
+GREEN = 6
 RED = 10
 YELLOW = 3
 
