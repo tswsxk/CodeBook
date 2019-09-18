@@ -3,8 +3,8 @@
 
 import time
 
-GREEN = 12
-RED = 15
+GREEN = 3
+RED = 10
 YELLOW = 3
 
 ZFILL_WIDTH = max(len(str(GREEN)), len(str(RED)), len(str(YELLOW)))
